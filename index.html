@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Desafio 1</title>
+
+    <style>
+        .albumes.hide, .fotos.hide {
+            display: none;
+        }
+
+        #gallery {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .albumWrapper {
+            border: 1px solid #ddd; 
+            cursor: pointer; 
+            width: 200px; 
+            height: 80px; 
+            text-align: center;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 3px;
+            background-color: #94dbff; 
+            border-color: #94dbff;
+        }
+
+        .albumWrapper:hover {
+            background-color: #eee;
+        }
+
+        #albumPhotos {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        #albumPhotos .photo {
+            margin: 2px;
+            cursor: pointer; 
+            width: 100px; 
+            height: 100px; 
+        }
+
+        #back {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="albumes">
+        <h1>Albumes</h1>    
+        <div id="gallery"></div>
+    </div>
+    
+    <div class="fotos hide">
+        <h1>Fotos</h1>    
+        <button id="back" onClick="togglePage()">Volver</button>
+        <div id="albumPhotos"></div>
+    </div>
+
+</body>
+
+
+<script src="./desafio1.js"></script>
+</html>
